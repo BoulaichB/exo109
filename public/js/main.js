@@ -11,6 +11,9 @@ content.addEventListener('click', (e) =>{
 });
 
 // ### 2. Créer un programme qui au double click d'un élément son texte est en majuscule
+content.addEventListener('dblclick', (e)=>{
+    e.target.innerText = e.target.innerText.toUpperCase();
+});
 
 // ### 3. Créer un programme qui au hasard choisis parmis les propriétés suivants et l'applique aux éléments quand on clique sur le button GO : 
 // - border: 1px solid gold;
