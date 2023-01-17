@@ -5,7 +5,10 @@ let pContent = "Il est possible de passer des parametres dans la function utilis
 
 // ### 1. Créer un programme qui au clique d'un des éléments de la div l'élément s'affiche dans la console, en utilisant une boucle pour appliquer un écouteur d'événement sur chaque élément !
 
-
+let content = document.getElementById('content');
+content.addEventListener('click', (e) =>{
+    console.log(e.target);
+});
 
 // ### 2. Créer un programme qui au double click d'un élément son texte est en majuscule
 
