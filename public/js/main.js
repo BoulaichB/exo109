@@ -20,3 +20,13 @@ content.addEventListener('dblclick', (e)=>{
 // - background-color: blue;
 // - background-color: red;
 // - border: 5px dotted gold;
+
+let proprietes = ["border: 1px solid gold;", "background-color: blue;", "background-color: red;", "border: 5px dotted gold;"];
+
+let go = document.getElementsByTagName('input')[0];
+go.addEventListener('click', () => {
+    for(let i = 0; i < content.children.length; i++){
+        content.children[i].style.cssText = proprietes[Math.floor(Math.random() * proprietes.length)];
+    }
+    
+});
